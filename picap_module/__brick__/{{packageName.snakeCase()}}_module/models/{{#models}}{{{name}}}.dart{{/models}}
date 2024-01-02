@@ -1,0 +1,18 @@
+import 'package:json_annotation/json_annotation.dart';
+
+part 'auth_provider_exception.model.g.dart';
+
+@JsonSerializable(includeIfNull: false)
+class {{models.name.pascalCase()}} {
+  @JsonKey(name: 'variable')
+  String? variable; 
+
+  {{models.name.pascalCase()}}({
+    this.variable, 
+  });
+
+  factory {{models.name.pascalCase()}}.fromJson(Map<String, dynamic> json) =>
+      _${{models.name.pascalCase()}}FromJson(json);
+
+  Map<String, dynamic> toJson() => _${{models.name.pascalCase()}}ToJson(this);
+}

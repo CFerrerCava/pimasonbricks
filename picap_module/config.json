@@ -1,0 +1,17 @@
+{
+    "packageName": "picaphome",
+    "endpoints": [
+        {
+            "path": "add_report",
+            "type": "post"
+        }
+    ],
+    "models": [
+        {
+            "name": "request"
+        },
+        {
+            "name": "open"
+        }
+    ]
+}
