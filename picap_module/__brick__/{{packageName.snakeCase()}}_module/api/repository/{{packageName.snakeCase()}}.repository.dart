@@ -4,10 +4,10 @@ import 'package:pi_core/base/app_base.repository.dart';
 
 @Injectable()
 class {{packageName.pascalCase()}}Repository {
-  final {{packageName.pascalCase()}}DataSource _${{packageName.pascalCase()}}DataSource;
+  final {{packageName.pascalCase()}}DataSource datasource;
 
   @factoryMethod
-  {{packageName.pascalCase()}}Repository.from(this._${{packageName.pascalCase()}}DataSource);
+  {{packageName.pascalCase()}}Repository.from(datasource);
 
 {{#endpoints}}
     Future<ApiResult<dynamic>> {{path.camelCase()}}(Model request) =>
